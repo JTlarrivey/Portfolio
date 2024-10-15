@@ -1,13 +1,13 @@
-const nodemailer = require('nodemailer');
+import { createTransport } from 'nodemailer';
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
   const { name, email, message } = JSON.parse(event.body);
 
-  const transporter = nodemailer.createTransport({
+  const transporter = createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
@@ -40,4 +40,4 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ message: "Error sending email" })
     };
   }
-};
+}
