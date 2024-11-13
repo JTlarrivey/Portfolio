@@ -50,6 +50,12 @@ const Projects = () => {
       link: "https://booknity-api.onrender.com/api"
     },
     {
+      title: "Booknity Dashboard",
+      description: "The Admin's dashboard to analyze data and manage users and other features. built with React and TypeScript",
+      image: "Booknity.jpg",
+      link: "https://dashboar-pf.vercel.app/"
+    },
+    {
       title: "E-Commerce Backend",
       description: "A backend built with TypeScript, NestJS and TypeOrm",
       image:"https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
@@ -61,6 +67,8 @@ const Projects = () => {
       image: "schedule.jpeg",
       link: "https://github.com/pi-rym/PM3-JTlarrivey"
     }
+   
+  
   ];
 
   return (
