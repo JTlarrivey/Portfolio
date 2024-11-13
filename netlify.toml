@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "dist"
 
+[functions]
+directory = "netlify/functions"
+
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
